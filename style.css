@@ -1,0 +1,139 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('RedMagic-11-Pro-plus-featured.jpg');
+    background-size: cover; /* Để ảnh luôn lấp đầy màn hình */
+    background-position: center; /* Để ảnh luôn nằm chính giữa */
+    background-attachment: fixed; /* Giữ ảnh đứng yên khi bạn cuộn trang, tạo hiệu ứng rất xịn */
+    background-repeat: no-repeat;
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+    border: 1px solid #c0c0c0; /* Màu bạc */
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(192, 192, 192, 0.2);
+    transition: transform 0.3s ease;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(192, 192, 192, 0.4);
+    border-color: #ffffff;
+}
+
+.card1 {
+    background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+    border: 1px solid #c0c0c0; /* Màu bạc */
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(192, 192, 192, 0.2);
+    transition: transform 0.6s ease;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(192, 192, 192, 0.4);
+    border-color: #ffffff;
+}
+
+h1 {
+    background: linear-gradient(90deg, #8e9eab, #eef2f3); /* Silver Gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #a0a0a0;
+    line-height: 1;
+}
+
+.status {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(192, 192, 192, 0.1);
+    border-radius: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #555;
+}
+
+.my-button {
+    display: inline-block; /* Quan trọng để có thể chỉnh padding và width */
+    padding: 10px 5px;
+    background-color: none; /* Màu đỏ cảnh báo */
+    color: #ffffff;
+    text-decoration: none; /* Bỏ cái gạch chân xấu xí của thẻ a */
+    border-radius: 8px; /* Bo tròn cho giống Red Magic */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.my-button:hover {
+    background-color: none; /* Di chuột vào thì đậm hơn */
+    transform: scale(1.05); /* Phóng to nhẹ nhìn cho sướng */
+}
+
+.shine-text {
+    /* Tạo dải màu: xám - trắng - xám */
+    background: linear-gradient(to right, #4d4d4d 0, #ffffff 10%, #4d4d4d 20%);
+    background-position: 0;
+    
+    /* Cắt background theo hình chữ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Kích thước background phải lớn hơn chữ để lướt qua */
+    background-size: 200% auto;
+    
+    /* Gọi hoạt ảnh "shine" chạy vô tận */
+    animation: shine 3s infinite linear;
+    font-weight: bold;
+}
+
+.shine-text1 {
+    /* Tạo dải màu: xám - trắng - xám */
+    background: linear-gradient(to right, #4d4d4d 0, #ffffff 20%, #4d4d4d 40%);
+    background-position: 0;
+    
+    /* Cắt background theo hình chữ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Kích thước background phải lớn hơn chữ để lướt qua */
+    background-size: 200% auto;
+    
+    /* Gọi hoạt ảnh "shine" chạy vô tận */
+    animation: shine 3s infinite linear;
+    font-weight: bold;
+}
+
+/* Định nghĩa hoạt ảnh chuyển động của background */
+@keyframes shine {
+    from {
+        background-position: 200% center; /* Bắt đầu ở bên phải */
+    }
+    to {
+        background-position: 0% center; /* Chạy về bên trái */
+    }
+}
