@@ -14,6 +14,8 @@ body {
     height: 100vh;
     margin: 0;
     animation: fadeIn 0.8s ease-in-out;
+    overflow-x: hidden; /* Ngăn chặn thanh cuộn ngang hiện ra vô lý */
+    width: 100%;
 }
 
 @keyframes fadeIn {
@@ -144,4 +146,5 @@ p {
     }
 
 }
+
 
