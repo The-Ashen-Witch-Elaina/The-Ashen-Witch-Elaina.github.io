@@ -13,6 +13,13 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 }
 
 .card {
@@ -136,4 +143,5 @@ p {
     to {
         background-position: 0% center; /* Chạy về bên trái */
     }
+
 }
