@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     animation: fadeIn 0.8s ease-in-out;
     overflow-x: hidden; /* Ngăn chặn thanh cuộn ngang hiện ra vô lý */
@@ -19,7 +19,7 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
+    from { opacity: 0; transform: translateY(0px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
@@ -80,6 +80,17 @@ p {
     font-weight: bold;
     color: #ffffff;
 }
+
+.status-left {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(192, 192, 192, 0.1);
+    border-radius: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+}
+
 .footer {
     margin-top: 30px;
     font-size: 0.8em;
@@ -100,6 +111,10 @@ p {
 .my-button:hover {
     background-color: none; /* Di chuột vào thì đậm hơn */
     transform: scale(1.05); /* Phóng to nhẹ nhìn cho sướng */
+}
+
+.my-back-button {
+    position: fixed;
 }
 
 .shine-text {
@@ -144,7 +159,4 @@ p {
     to {
         background-position: 0% center; /* Chạy về bên trái */
     }
-
 }
-
-
