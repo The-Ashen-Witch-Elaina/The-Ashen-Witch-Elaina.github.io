@@ -161,6 +161,58 @@ p {
     }
 }
 
+/* --- TURN BACK SWITCH --- */
+.turn-back-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    background: rgba(30, 30, 30, 0.85);
+    border: 1px solid #c0c0c060;
+    padding: 6px 12px;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.back-text-label {
+    margin: 0 8px;
+    color: #8e9eab;
+    transition: color 0.3s;
+    text-decoration: none
+}
+
+.back-button {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+}
+
+/* 1. Thêm transition vào container gốc để hiệu ứng mượt mà khi di chuột ra/vào */
+.turn-back-container {
+    /* ... các thuộc tính cũ của bạn ... */
+    transition: all 0.6s ease;
+    cursor: pointer; /* Đổi con trỏ chuột thành hình bàn tay cho toàn bộ khung */
+}
+
+/* 2. HOVER CONTAINER: Sáng viền + Sáng chữ cùng lúc */
+.turn-back-container:hover {
+    /* Viền sáng hơn & đổ bóng viền phát sáng */
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.4), 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Tác động trực tiếp vào chữ KHI container được hover */
+.turn-back-container:hover .back-text-label {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+}
+
 /* --- TOGGLE LANGUAGE SWITCH --- */
 .lang-switch-container {
     position: fixed;
@@ -170,7 +222,7 @@ p {
     display: flex;
     align-items: center;
     background: rgba(30, 30, 30, 0.85);
-    border: 1px solid #c0c0c0;
+    border: 1px solid #c0c0c060;
     padding: 6px 12px;
     border-radius: 30px;
     backdrop-filter: blur(5px);
@@ -182,11 +234,11 @@ p {
 .lang-label {
     margin: 0 8px;
     color: #8e9eab;
-    transition: color 0.3s;
+    transition: color 0.6s;
 }
 
 .lang-label.active {
-    color: #ffffff;
+    color: #fffffffd;
     text-shadow: 0 0 5px rgba(255,255,255,0.8);
 }
 
